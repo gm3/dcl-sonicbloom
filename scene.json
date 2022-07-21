@@ -1,0 +1,61 @@
+{
+  "display": {
+    "title": "Sonic Bloom 2",
+    "favicon": "favicon_asset",
+    "navmapThumbnail": "scene-thumbnail.png"
+  },
+  "owner": "",
+  "contact": {
+    "name": "author-name",
+    "email": ""
+  },
+  "main": "bin/game.js",
+  "tags": [],
+  "scene": {
+    "parcels": [
+      
+      "16,-86",
+      "17,-86",
+      "18,-86",
+      "19,-86",
+      "20,-86",
+      "21,-86",
+      "22,-86",
+      "16,-87",
+      "17,-87",
+      "18,-87",
+      "19,-87",
+      "20,-87",
+      "21,-87",
+      "22,-87",
+      "16,-88",
+      "17,-88",
+      "18,-88",
+      "19,-88",
+      "20,-88",
+      "21,-88",
+      "22,-88",
+      "21,-85",
+      "22,-85",
+      "21,-89",
+      "22,-89"
+      
+
+    ],
+    "base": "16,-86"
+  },
+  "source": {
+    "version": 1,
+    "origin": "builder",
+    "projectId": "3699c9c3-57e0-4b71-9684-1c40ff935d7c",
+    "point": {
+      "x": 0,
+      "y": 0
+    },
+    "rotation": "east",
+    "layout": {
+      "rows": 5,
+      "cols": 7
+    }
+  }
+}
