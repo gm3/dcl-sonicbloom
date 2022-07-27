@@ -180,6 +180,86 @@ gltfShape5.isPointerBlocker = true
 gltfShape5.visible = true
 lighttower.addComponentOrReplace(gltfShape5)  
 
+// add mainstage aniamted 1
+const mainstageanimated1 = new Entity('mainstageanimated1')
+engine.addEntity(mainstageanimated1)
+mainstageanimated1.setParent(_scene)
+const transform47 = new Transform({
+  position: new Vector3(2, 0, 16),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+mainstageanimated1.addComponentOrReplace(transform47)
+const gltfShape6 = new GLTFShape("models/main_stage_animated_1.glb")
+gltfShape6.withCollisions = true
+gltfShape6.isPointerBlocker = true
+gltfShape6.visible = true
+mainstageanimated1.addComponentOrReplace(gltfShape6)  
+
+// add mainstage aniamted 2
+const mainstageanimated2 = new Entity('mainstageanimated2')
+engine.addEntity(mainstageanimated2)
+mainstageanimated2.setParent(_scene)
+const transform48 = new Transform({
+  position: new Vector3(2, 0, 16),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+mainstageanimated2.addComponentOrReplace(transform48)
+const gltfShape7 = new GLTFShape("models/main_stage_animated_2.glb")
+gltfShape7.withCollisions = true
+gltfShape7.isPointerBlocker = true
+gltfShape7.visible = true
+mainstageanimated2.addComponentOrReplace(gltfShape7)  
+
+// add humming aniamted 1
+const hummingstageanimated1 = new Entity('hummingstageanimated1')
+engine.addEntity(hummingstageanimated1)
+hummingstageanimated1.setParent(_scene)
+const transform49 = new Transform({
+  position: new Vector3(2, 0, 16),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+hummingstageanimated1.addComponentOrReplace(transform49)
+const gltfShape8 = new GLTFShape("models/humming_stage_animated_1.glb")
+gltfShape8.withCollisions = true
+gltfShape8.isPointerBlocker = true
+gltfShape8.visible = true
+hummingstageanimated1.addComponentOrReplace(gltfShape8)  
+
+// add humming aniamted 2
+const hummingstageanimated2 = new Entity('hummingstageanimated2')
+engine.addEntity(hummingstageanimated2)
+hummingstageanimated2.setParent(_scene)
+const transform50 = new Transform({
+  position: new Vector3(2, 0, 16),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+hummingstageanimated2.addComponentOrReplace(transform50)
+const gltfShape9 = new GLTFShape("models/humming_stage_animated_2.glb")
+gltfShape9.withCollisions = true
+gltfShape9.isPointerBlocker = true
+gltfShape9.visible = true
+hummingstageanimated2.addComponentOrReplace(gltfShape9)  
+
+// add meadow animation
+const meadowstageanimation = new Entity('meadowstageanimation')
+engine.addEntity(meadowstageanimation)
+meadowstageanimation.setParent(_scene)
+const transform51 = new Transform({
+  position: new Vector3(2, 0, 16),
+  rotation: new Quaternion(0, 0, 0, 1),
+  scale: new Vector3(1, 1, 1)
+})
+meadowstageanimation.addComponentOrReplace(transform51)
+const gltfShape10 = new GLTFShape("models/meadow_stage_animated.glb")
+gltfShape10.withCollisions = true
+gltfShape10.isPointerBlocker = true
+gltfShape10.visible = true
+meadowstageanimation.addComponentOrReplace(gltfShape10)  
+
 
 
 //solar punk link
