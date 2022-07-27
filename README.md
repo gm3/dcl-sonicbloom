@@ -45,7 +45,7 @@ WE have created an interactive game where you can pick up crystals and win a pri
 ![](https://i.imgur.com/qTlAKuC.png)
 
 ## Contact
-We are a Denver based art collective, and looking to network with other artists, and virtual / phicial events. If you would like to contact us, for questions or interviews, please reach out to https://twitter.com/irlart__ or stop by our website for moe information https://irlart.com/. We would love to hear from you, and about your projects!
+We are a Denver based art collective, and looking to network with other artists, and virtual / phicial events. If you would like to contact us, for questions or interviews, please reach out to @irlart__ or stop by our website for moe information https://irlart.com/. We would love to hear from you, and about your projects!
 
 
 
