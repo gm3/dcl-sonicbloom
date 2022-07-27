@@ -7,7 +7,7 @@ Sonic Bloom Twitter https://twitter.com/SONIC_BLOOM
 Sonic Bloom Discord https://discord.com/invite/ZprYm7eaC2
 
 ## Project Overview
-IRLArt has recreated Sonic Bloom festival in the metaverse featureing stages, music, and games! A great time capsule of this wonderful expierence where people from all around the world can come together in the metaverse to enjoy a great memory with their friends.
+IRLArt has recreated Sonic Bloom festival in the metaverse featuring stages, music, and games! A great time capsule of this wonderful experience where people from all around the world can come together in the metaverse to enjoy a great memory with their friends.
 
 ![](https://i.imgur.com/kVnb2m2.png)
 
@@ -40,12 +40,12 @@ Link to [IRLArt](https://irlart.com/)
 
 
 ## Game Instructions
-WE have created an interactive game where you can pick up crystals and win a prize! To win a PoaP, you can explore the camp grounds and find all the cryptals hidden about! Hint: There are some in high places you might have to climb a tree to get to! have fun!
+WE have created an interactive game where you can pick up crystals and win a prize! To win a PoaP, you can explore the campgrounds and find all the crystals hidden about! Hint: There are some in high places you might have to climb a tree to get to! Have fun!
 
 ![](https://i.imgur.com/qTlAKuC.png)
 
 ## Contact
-We are a Denver based art collective, and looking to network with other artists, and virtual / phicial events. If you would like to contact us, for questions or interviews, please reach out to @irlart__ or stop by our website for moe information https://irlart.com/. We would love to hear from you, and about your projects!
+We are a Denver based art collective, and looking to network with other artists, and virtual / physical events. If you would like to contact us, for questions or interviews, please reach out to @irlart__ or stop by our website for more information https://irlart.com/. We would love to hear from you, and about your projects!
 
 
 
