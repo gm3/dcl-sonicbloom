@@ -554,7 +554,7 @@ const transform25 = new Transform({
 triggerArea2.addComponentOrReplace(transform25)
 
 
-const externalLink4 = new Entity('externalLink4')
+/* const externalLink4 = new Entity('externalLink4')
 engine.addEntity(externalLink4)
 externalLink4.setParent(_scene)
 externalLink4.addComponent(new PlaneShape())
@@ -563,7 +563,7 @@ const transform27 = new Transform({
   rotation: new Quaternion(180,0,180,1),
   scale: new Vector3(4,4,4)
 })
-externalLink4.addComponentOrReplace(transform27)
+externalLink4.addComponentOrReplace(transform27) */
 
 
 const twitterButtonLink = new Entity('twitterButtonLink')
