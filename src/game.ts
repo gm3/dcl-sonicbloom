@@ -641,6 +641,8 @@ const transform33 = new Transform({
 })
 discordButtonLink.addComponentOrReplace(transform33)
 
+
+
 const externalLink11 = new Entity('externalLink11')
 engine.addEntity(externalLink11)
 externalLink11.setParent(_scene)
@@ -836,8 +838,27 @@ const coinPositions = [
   new Vector3(40,9,-4), // top floor before globe
   new Vector3(97,19,-20), // treetop 1
   new Vector3(60,10,-20), // treetop 1
-  
 ]  
+
+// Contains the positions for each can
+/* const coinPositions = [
+  new Vector3(1,1,1), // front outside
+  new Vector3(1,1,2), // front outside 2 
+  new Vector3(1,1,3), // 
+  new Vector3(1,1,4), // 
+  new Vector3(1,1,5), // 
+  new Vector3(1,1,6), // 
+  new Vector3(1,1,7), // 
+  new Vector3(1,1,8), // 
+  new Vector3(1,1,9), // 
+  new Vector3(1,1,10), // 
+  new Vector3(1,1,11), // top floor before globe
+  new Vector3(1,1,12), // top floor before globe
+  new Vector3(1,1,13), // top floor before globe
+  new Vector3(1,1,14), // treetop 1
+  new Vector3(1,1,15), // treetop 1
+  
+]   */
 
 
 const triggerBoxShape = new utils.TriggerBoxShape(
@@ -880,6 +901,7 @@ const script3 = new Script3()
 const script4 = new Script4()
 const script5 = new Script5()
 const script6 = new Script6()
+const script8 = new Script8()
 const script12 = new Script12()
 const script9 = new Script9()
 
@@ -890,6 +912,7 @@ script4.init(options)
 script5.init(options)
 script6.init(options)
 script7.init(options)
+script8.init(options)
 script12.init(options)
 sc.init(options)
 script9.init(optionsRadio)
@@ -914,11 +937,6 @@ executeTask(async () => {
     // }
   })
 })
-
-
-
-
-
 
 
 

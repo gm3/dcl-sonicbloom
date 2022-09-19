@@ -12,7 +12,7 @@ export function buildUI() {
   // puzzleCompletion = new ui.UIBar(0, -30, 500, Color4.Green(), ui.BarStyles.ROUNDSILVER, 1)
  
 
-  let cansProgress = new ui.CornerLabel('Files:', -150, 580)
+  let cansProgress = new ui.CornerLabel('Crystals:', -160, 580)
   canPuzzleCompletion = new ui.UIBar(0, -30, 590, Color4.Teal(), ui.BarStyles.ROUNDSILVER, 1)
 
 
@@ -22,7 +22,7 @@ export function buildUI() {
 
 export function welcomeMessage(){
   let prompt = new ui.OkPrompt(
-    'Hello and welcome to FarOut Mural!\n We\'ve created several Mural Puzzles for you to solve in order to win a prize.',
+    'Hello collect all the crystals  to win a prize.',
     () => {
       log(`accepted`)
     },
@@ -35,7 +35,7 @@ export function welcomeMessage(){
 
 export function rewardMessage( ){
   let prompt = new ui.OkPrompt(
-    'Thank you for collecting all the files! Claim your prize in the globe!',
+    'You collected all the crystals! Claim your prize in the cave, scan the qr with your smartphone!',
     () => {      
       log(`accepted`)
     },
@@ -43,16 +43,30 @@ export function rewardMessage( ){
     true
   )
 }
+
+
 
 export function canPuzzleRewardMessage( ){
   let prompt = new ui.OkPrompt(
-    'Thank you for collecting all the files! Claim your prize in the globe!',
+    'You collected all the crystals! Claim your prize! Scan the QR with your smartphone!',
     () => {      
       log(`accepted`)
 
     },
     'Ok',
     true
-  )
-  // openExternalURL(this.canRewardURL)
-}
+    const canvas = new UICanvas()
+    const clickableImage = new UIImage(canvas, new Texture("https://gm3.github.io/imgs/img/win2.png"))
+    
+    
+    clickableImage.name = "clickable-image"
+    clickableImage.width = "300px"
+    clickableImage.hAlign = "left"
+    clickableImage.height = "300px"
+    clickableImage.sourceWidth = 300
+    clickableImage.sourceHeight = 300
+    clickableImage.isPointerBlocker = true
+    clickableImage.onClick = new OnClick(() => {
+      // DO SOMETHING
+  
+})

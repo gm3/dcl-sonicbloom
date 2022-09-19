@@ -61,8 +61,8 @@ export function addLabel(text: string, parent: IEntity) {
 
 export class solarPunkLink extends Entity {
 
-  const winTexture1 = new Texture("tex/filecoin_prize_graphic.png")
-  const winTexture2 = new Texture("tex/filecoin_prize_graphic.png")
+  winTexture1 = new Texture("https://gm3.github.io/imgs/img/win.png")
+  winTexture2 = new Texture("https://gm3.github.io/imgs/img/win.png")
   
   constructor() {
     super() 
@@ -76,7 +76,7 @@ export class solarPunkLink extends Entity {
   }
   hideLink() {
     const transformHide = new Transform({
-      position: new Vector3(100,4,16),
+      position: new Vector3(1,1,1),
       rotation: new Quaternion(270, 0, 0, 1),
       scale: new Vector3(0,0,0)
 
@@ -85,12 +85,13 @@ export class solarPunkLink extends Entity {
   }
   showLink() {
     const transformShow = new Transform({
-      position: new Vector3(100,4,16),
+      position: new Vector3(1,1,1),
       rotation: new Quaternion(270, 0, 0, 1),
       scale: new Vector3(1.8, 2.5, -1)
 
     })
     this.addComponentOrReplace(transformShow)
+
   }
 }
 
@@ -114,7 +115,7 @@ export class puzzleRewardLink extends Entity {
   }
   showLink() {
     const transformShow = new Transform({
-      position: new Vector3(11.6, 2, 5),
+      position: new Vector3(1, 1, 1),
       rotation: new Quaternion(270, 0, 270, 1),
       scale: new Vector3(5, 5, 1)
 
@@ -122,6 +123,8 @@ export class puzzleRewardLink extends Entity {
     this.addComponentOrReplace(transformShow)
   }
 }
+
+
 
 export class cMuralScene {
   completionTarget: number = 6

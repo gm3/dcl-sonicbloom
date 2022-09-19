@@ -46,7 +46,7 @@ export function createCoin(
           log('Show winPLane');
 
           myUI.canPuzzleRewardMessage()
-          externalLink.showLink()
+          //externalLink.showLink()
           //externalLink.getComponent(PlaneShape).visible = true;
 
 
