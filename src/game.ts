@@ -53,10 +53,10 @@ const channelBus = new MessageBus()
 const inventory = createInventory(UICanvas, UIContainerStack, UIImage)
 const options = { inventory }
 
-const channelIdradio = Math.random().toString(16).slice(2)
+/* const channelIdradio = Math.random().toString(16).slice(2)
 const channelBusRadio = new MessageBus()
 const inventoryRadio = createInventory(UICanvas, UIContainerStack, UIImage)
-const optionsRadio = { inventoryRadio }
+const optionsRadio = { inventoryRadio } */
 
 
 // grass
@@ -409,7 +409,7 @@ const transform277 = new Transform({
 })
 messageBubble2.addComponentOrReplace(transform277)
 
-const radio2 = new Entity('radio2')
+/* const radio2 = new Entity('radio2')
 engine.addEntity(radio2)
 radio2.setParent(_scene2)
 const transform28 = new Transform({
@@ -417,7 +417,7 @@ const transform28 = new Transform({
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
-radio2.addComponentOrReplace(transform28)
+radio2.addComponentOrReplace(transform28) */
 
 const samDomes = new Entity('samDomes')
 engine.addEntity(samDomes)
@@ -837,7 +837,7 @@ const coinPositions = [
   new Vector3(50,9,-1), // top floor before globe
   new Vector3(40,9,-4), // top floor before globe
   new Vector3(97,19,-20), // treetop 1
-  new Vector3(60,10,-20), // treetop 1
+  new Vector3(60,10,-20), // treetop 1s
 ]  
 
 // Contains the positions for each can
@@ -883,7 +883,7 @@ let FarOutMural = new cMuralScene(puzzleRLink)
 
 // radio
 
-const radio = new Entity('radio')
+/* const radio = new Entity('radio')
 engine.addEntity(radio)
 radio.setParent(_scene)
 const transform3 = new Transform({
@@ -891,9 +891,43 @@ const transform3 = new Transform({
   rotation: new Quaternion(0, 0, 0, 1),
   scale: new Vector3(1, 1, 1)
 })
-radio.addComponentOrReplace(transform3) 
+radio.addComponentOrReplace(transform3)  */
 
 // Yuls additions
+
+// video player
+const screen2 = new Entity()
+screen2.setParent(_scene)
+screen2.addComponent(new PlaneShape())
+screen2.addComponent(
+  new Transform({
+    position: new Vector3(21, 3.5, -29.5),
+    scale: new Vector3(8, 4, 1)
+  })
+)
+
+engine.addEntity(screen2)
+
+const myVideoClip = new VideoClip(
+  'http://playertest.longtailvideo.com/adaptive/oceans_aes/oceans_aes.m3u8'
+)
+
+const myVideoTexture = new VideoTexture(myVideoClip)
+myVideoTexture.play()
+myVideoTexture.loop = true
+// myVideoTexture.volume = 0
+
+
+const myVideoMaterial = new Material()
+myVideoMaterial.albedoTexture = myVideoTexture
+myVideoMaterial.roughness = 1
+myVideoMaterial.specularIntensity = 0
+myVideoMaterial.metallic = 0
+myVideoMaterial.emissiveTexture = myVideoTexture
+myVideoMaterial.emissiveColor = Color3.White()
+myVideoMaterial.emissiveIntensity = 0.6
+screen2.addComponentOrReplace(myVideoMaterial)
+// end video stream player
 
 const script1 = new Script1()
 const script2 = new Script2()
@@ -915,10 +949,10 @@ script7.init(options)
 script8.init(options)
 script12.init(options)
 sc.init(options)
-script9.init(optionsRadio)
+//script9.init(optionsRadio)
 
-
-script9.spawn(radio, {"startOn":true,"volume":.5,"onClickText":"Radio On/Off","onClick":[{"entityName":"radio","actionId":"toggle","values":{}}],"customStation":" ","onActivate":[],"onDeactivate":[]}, createChannel(channelIdradio, radio, channelBusRadio))
+// radio script
+/* script9.spawn(radio, {"startOn":true,"volume":.5,"onClickText":"Radio On/Off","onClick":[{"entityName":"radio","actionId":"toggle","values":{}}],"customStation":" ","onActivate":[],"onDeactivate":[]}, createChannel(channelIdradio, radio, channelBusRadio)) */
 
 
 // player enters and exits scene
@@ -946,13 +980,13 @@ script5.spawn(discordButtonLink, {"url":"invite/ZprYm7eaC2","bnw":false}, create
 
 
 
-script1.spawn(triggerArea22, {"enabled":true,"onEnter":[{"entityName":"radio2","actionId":"activate","values":{}}],"onLeave":[{"entityName":"radio2","actionId":"deactivate","values":{}}]}, createChannel(channelId, triggerArea22, channelBus))
-script1.spawn(triggerArea222, {"enabled":true,"onEnter":[{"entityName":"radio2","actionId":"activate","values":{}}],"onLeave":[{"entityName":"radio2","actionId":"deactivate","values":{}}]}, createChannel(channelId, triggerArea222, channelBus))
+/* script1.spawn(triggerArea22, {"enabled":true,"onEnter":[{"entityName":"radio2","actionId":"activate","values":{}}],"onLeave":[{"entityName":"radio2","actionId":"deactivate","values":{}}]}, createChannel(channelId, triggerArea22, channelBus))
+script1.spawn(triggerArea222, {"enabled":true,"onEnter":[{"entityName":"radio2","actionId":"activate","values":{}}],"onLeave":[{"entityName":"radio2","actionId":"deactivate","values":{}}]}, createChannel(channelId, triggerArea222, channelBus)) */
 script1.spawn(triggerArea6, {"enabled":true,"onEnter":[{"entityName":"messageBubble","actionId":"open","values":{}}],"onLeave":[{"entityName":"messageBubble","actionId":"close","values":{}}]}, createChannel(channelId, triggerArea6, channelBus))
 script2.spawn(messageBubble, {"text":"Welcome to the Unified Field!\nOur world is connecting in new \nways, and we are now testing \nthe transferance of energy \nthrough the digital world.\nExplore Sonic Bloom \nanywhere in the world.","fontSize":16.5}, createChannel(channelId, messageBubble, channelBus))
 script2.spawn(messageBubble2, {"text":"Legend is theres a cave in the mountain! \nIts powered by a crystal energy source, \nand its told that if all the crystals are \ncollected, a gift will be given to the finder.","fontSize":16.5}, createChannel(channelId, messageBubble2, channelBus))
-script3.spawn(radio2, {"startOn":false,"volume":1,"onClickText":"Hummingbird Stage","onClick":[],"station":"https://icecast.ravepartyradio.org/ravepartyradio-192.mp3","customStation":"https://gateway.pinata.cloud/ipfs/QmZk1NfY4XTijKVSC6VChNxoPGLgnoykNordrSFmmmdMBk","onActivate":[]}, createChannel(channelId, radio2, channelBus))
-script1.spawn(triggerArea7, {"enabled":true,"onEnter":[{"entityName":"radio2","actionId":"activate","values":{}}],"onLeave":[{"entityName":"radio2","actionId":"deactivate","values":{}}]}, createChannel(channelId, triggerArea7, channelBus))
+/* script3.spawn(radio2, {"startOn":false,"volume":1,"onClickText":"Hummingbird Stage","onClick":[],"station":"https://icecast.ravepartyradio.org/ravepartyradio-192.mp3","customStation":"https://gateway.pinata.cloud/ipfs/QmZk1NfY4XTijKVSC6VChNxoPGLgnoykNordrSFmmmdMBk","onActivate":[]}, createChannel(channelId, radio2, channelBus))
+script1.spawn(triggerArea7, {"enabled":true,"onEnter":[{"entityName":"radio2","actionId":"activate","values":{}}],"onLeave":[{"entityName":"radio2","actionId":"deactivate","values":{}}]}, createChannel(channelId, triggerArea7, channelBus)) */
 script4.spawn(externalLink, {"url":"https://www.instagram.com/ajdavisart/","name":"Mural by @ajdavisart"}, createChannel(channelId, externalLink, channelBus))
 script4.spawn(externalLink222, {"url":"https://www.peacefulplacesvr.com/VR-Library/sonic-bloom-vr-13.html ","name":"Sonic Bloom VR #13 featuring Random Rab at the Main Stage, 2017. "}, createChannel(channelId, externalLink222, channelBus))
 script4.spawn(externalLink3, {"url":"https://www.peacefulplacesvr.com/VR-Library/sonic-bloom-vr-3.html ","name":"Sonic Bloom VR #3 featuring STS9 at the Main Stage, 2015.  "}, createChannel(channelId, externalLink3, channelBus))
