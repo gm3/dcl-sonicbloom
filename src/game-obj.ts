@@ -61,8 +61,8 @@ export function addLabel(text: string, parent: IEntity) {
 
 export class solarPunkLink extends Entity {
 
-  winTexture1 = new Texture("https://gm3.github.io/imgs/img/win.png")
-  winTexture2 = new Texture("https://gm3.github.io/imgs/img/win.png")
+  winTexture1 = new Texture("https://gm3.github.io/imgs/img/win2.png")
+  winTexture2 = new Texture("https://gm3.github.io/imgs/img/win2.png")
   
   constructor() {
     super() 
